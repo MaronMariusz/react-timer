@@ -1,0 +1,48 @@
+{
+  "name": "react-timer",
+  "version": "1.0.0",
+  "description": "Timer component with controls",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaronMariusz/react-timer.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "timer",
+    "clock",
+    "webpack"
+  ],
+  "author": "Mariusz Maroń <maronmariusz@gmail.com> (https://github.com/MaronMariusz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaronMariusz/react-timer/issues"
+  },
+  "homepage": "https://github.com/MaronMariusz/react-timer",
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.9.0",
+    "eslint-plugin-react": "^3.6.2",
+    "material-ui": "^0.13.1",
+    "moment": "^2.10.6",
+    "react-addons-create-fragment": "^0.14.1",
+    "react-addons-pure-render-mixin": "^0.14.1",
+    "react-addons-transition-group": "^0.14.1",
+    "react-addons-update": "^0.14.1",
+    "react-hot-loader": "^1.3.0",
+    "react-tap-event-plugin": "^0.2.1",
+    "v": "0.0.9",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.time {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  display: inline-block;
+}
