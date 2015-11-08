@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Time from './Time';
 import TimerButton from './TimerButton';
-import AppBar from 'material-ui/lib/app-bar'
-import Button from 'material-ui/lib/raised-button'
 import Moment from 'moment/moment'
 
 import {defaultTimer, countDownInterval} from './constant'
@@ -15,8 +13,7 @@ export default class Timer extends Component {
     this.state = {
       counter: defaultTimer,
       play: true,
-      pause: false,
-      socketConnection: new WebSocket('ws://echo.websocket.org')
+      pause: false
     };
 
   }
@@ -103,7 +100,6 @@ export default class Timer extends Component {
   render() {
     return (
       <div className="wrapper">
-        <AppBar title="Timer (Material UI)"/>
         <span>
           <TimerButton name="+1" times={1000} action={::this.increment} />
           <TimerButton name="+10" times={10000} action={::this.increment} />
