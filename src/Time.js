@@ -4,7 +4,7 @@ export default class Time extends Component {
 
   render() {
     return (
-      <span>{this.props.value}</span>
+      <h1>{this.props.value}</h1>
     );
   }
 }

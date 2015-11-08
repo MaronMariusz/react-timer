@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Time from './Time';
 import TimerButton from './TimerButton';
-import Moment from 'moment/moment'
 
 import {defaultTimer, countDownInterval} from './constant'
 
@@ -99,20 +98,24 @@ export default class Timer extends Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <span>
-          <TimerButton name="+1" times={1000} action={::this.increment} />
-          <TimerButton name="+10" times={10000} action={::this.increment} />
-        </span>
-        <span>
-          <Time className="time" value={this.state.counter} />
-        </span>
-        <span>
-          <TimerButton name="-10" times={10000} action={::this.decrement} />
-          <TimerButton name="-1" times={1000} action={::this.decrement} />
-          <TimerButton name="Reset" action={::this.clearTimer} />
-          <TimerButton name="Pause / Play" action={::this.stopCountDown} />
-        </span>
+      <div className="container">
+        <h1> React Timer Component</h1>
+        <div className="row ">
+          <div className="col-xs-12">
+
+            <h4>Controls:</h4>
+            <TimerButton name="+1" times={1000} action={::this.increment} />
+            <TimerButton name="+10" times={10000} action={::this.increment} />
+            <TimerButton name="-10" times={10000} action={::this.decrement} />
+            <TimerButton name="-1" times={1000} action={::this.decrement} />
+            <TimerButton name="Reset" action={::this.clearTimer} />
+            <TimerButton name="Pause / Play" action={::this.stopCountDown} />
+
+            <h4>Count Down:</h4>
+            <Time className="time" value={this.state.counter} />
+
+          </div>
+        </div>
       </div>
     );
   }
