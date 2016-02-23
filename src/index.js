@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Timer from './Timer';
+import Root from './containers/Root';
 
 import './styles/flatstrap.css';
 import './styles/main.css';
 
-ReactDOM.render(<Timer />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
