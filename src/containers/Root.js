@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from '../store/config';
-import Timer from '../components/Timer';
+import Timer from './Timer';
 
 export default class Root extends Component {
 

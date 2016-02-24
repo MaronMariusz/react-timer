@@ -13,7 +13,7 @@ export const time = (state = 0, action) => {
 
     case SET_TIME:
 
-      return state = action.time;
+      return action.time;
       
     default:
 
